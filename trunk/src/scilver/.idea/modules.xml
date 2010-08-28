@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/scilver-parent/scilver-main/scilver-main.iml" filepath="$PROJECT_DIR$/scilver-parent/scilver-main/scilver-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scilver-parent/scilver-parent.iml" filepath="$PROJECT_DIR$/scilver-parent/scilver-parent.iml" />
+    </modules>
+  </component>
+</project>
+
