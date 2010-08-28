@@ -3,6 +3,15 @@
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="scala">
+        <modules>
+          <module name="scilver-main" />
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
   <component name="IdProvider" IDEtalkID="3B8631D847733FAEEFF567D4154C7FE0" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
