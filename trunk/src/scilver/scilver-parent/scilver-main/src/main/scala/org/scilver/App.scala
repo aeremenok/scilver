@@ -1,9 +1,7 @@
 package org.scilver
 
 import scala.swing._
-import org.jdesktop.swingx.JXLoginPane
-import org.jdesktop.swingx.auth.{LoginEvent, LoginAdapter}
-import javax.swing.{UIManager, JToolBar}
+import javax.swing.UIManager
 
 /**
  * @author eav
@@ -15,32 +13,28 @@ object App extends SwingApplication {
   val title = "Scilver v." + version;
 
   def initLaf {
+    if (!setLaf("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"))
+      setLaf(UIManager.getSystemLookAndFeelClassName)
+  }
+
+
+  def setLaf(laf: String): Boolean = {
     try {
-      UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel")
+      UIManager.setLookAndFeel(laf)
+      true
     }
     catch {
-      case _ =>
-        try {
-          UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName)
-        }
-        catch {
-          case _ => {}
-        }
+      case _ => false
     }
+  }
+
+  def login {
+    if (authentication.authenticate) mainFrame.visible = true
   }
 
   override def startup(args: Array[String]) {
     initLaf
-
-    authentication.addLoginListener(new LoginAdapter {
-      override def loginSucceeded(source: LoginEvent) {
-        mainFrame.visible = true
-      }
-    })
-
-    val lf = JXLoginPane.showLoginFrame(authentication)
-    lf.setTitle(title)
-    lf.setVisible(true)
+    login
   }
 }
 
@@ -49,25 +43,9 @@ object mainFrame extends MainFrame {
 
   contents = new BorderPanel {
     import BorderPanel.Position._
-    add(Component.wrap(toolBar), North)
+    add(toolBar, North)
     add(new Button("Center"), Center)
   }
 
   maximize
-}
-
-object toolBar extends JToolBar {
-  def add(a: Action) = super.add(a.peer)
-
-  add(postAction)
-}
-
-object postAction extends Action(i18n.tr("Post")) {
-  def apply() {
-    println("post")
-  }
-}
-
-object i18n {
-  def tr(text: String) = text // todo
 }
