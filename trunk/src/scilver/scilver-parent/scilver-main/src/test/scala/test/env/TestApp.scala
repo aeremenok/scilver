@@ -1,7 +1,6 @@
 package test.env
 
-import org.scilver.{authentication, mainFrame, App}
-import twitter4j.{User, Twitter}
+import org.scilver._
 
 /**
  * @author eav
@@ -9,12 +8,7 @@ import twitter4j.{User, Twitter}
  * Time: 12:09:58
  */
 
-object TestApp
+class TestApp(fakeCredentials: Credentials) extends BasicApp
 {
-  def startup(twitter: Twitter, user: User) {
-    App.initLaf
-    authentication.twitter = twitter
-    authentication.user = user
-    mainFrame.visible = true
-  }
+  override def login = fakeCredentials
 }

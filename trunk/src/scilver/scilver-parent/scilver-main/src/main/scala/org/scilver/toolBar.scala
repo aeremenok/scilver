@@ -19,7 +19,7 @@ object toolBar extends BoxPanel(Orientation.Horizontal) {
   this += followingAction
 }
 
-import authentication.user
+import App.credentials.user
 
 object tweetAction extends Action(i18n tr "Tweet") {
   def apply = Dialog.showMessage(toolBar, "Tweet") // todo

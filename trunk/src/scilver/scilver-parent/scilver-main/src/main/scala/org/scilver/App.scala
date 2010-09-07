@@ -8,34 +8,34 @@ import javax.swing.UIManager
  * Date: 28.08.2010
  * Time: 12:54:04
  */
-object App extends SwingApplication {
+abstract class BasicApp extends SwingApplication {
   val version = "0.1";
   val title = "Scilver v." + version;
+  lazy val credentials = login
+
+  def login: Credentials
+
+  override def startup(args: Array[String]) {
+    initLaf
+  }
 
   def initLaf {
     if (!setLaf("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"))
       setLaf(UIManager.getSystemLookAndFeelClassName)
   }
 
-
   def setLaf(laf: String): Boolean = {
     try {
-      UIManager.setLookAndFeel(laf)
-      true
+      UIManager.setLookAndFeel(laf); true
     }
     catch {
       case _ => false
     }
   }
+}
 
-  def login {
-    if (authentication.authenticate) mainFrame.visible = true
-  }
-
-  override def startup(args: Array[String]) {
-    initLaf
-    login
-  }
+object App extends BasicApp {
+  def login = authentication.login
 }
 
 object mainFrame extends MainFrame {
