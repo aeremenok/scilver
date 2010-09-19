@@ -1,17 +1,19 @@
 package org.scilver
 
-import twitter4j.{TwitterException, User, TwitterFactory, Twitter}
-
-import twitter4j.http.AccessToken
+import db.Credentials
+import db.dao.CredentialsDAO
 import java.awt.Desktop
 import java.net.URI
 import swing.Dialog
+import twitter4j.{User, TwitterException, TwitterFactory, Twitter}
 
 /**
  * @author eav
  * Date: 28.08.2010
  * Time: 12:54:04
  */
+case class Authentication(credentials: Credentials, twitter: Twitter, user: User)
+
 object authentication {
   def login = {
     val twitter = new TwitterFactory().getInstance();
@@ -19,7 +21,7 @@ object authentication {
     enterPin(twitter)
   }
 
-  private def enterPin(twitter: Twitter): Credentials = {
+  private def enterPin(twitter: Twitter): Authentication = {
     val request = twitter.getOAuthRequestToken
     Desktop.getDesktop.browse(new URI(request.getAuthorizationURL))
 
@@ -29,7 +31,9 @@ object authentication {
         try {
           val accessToken = twitter.getOAuthAccessToken(request, pin.get)
           val user = twitter.verifyCredentials
-          Credentials(null, user, accessToken)
+          val credentials = Credentials(accessToken)
+          CredentialsDAO.save(credentials)
+          Authentication(credentials, twitter, user)
         }
         catch {
           case e: TwitterException => {
@@ -41,7 +45,6 @@ object authentication {
   }
 }
 
-case class Credentials(twitter: Twitter, user: User, accessToken: AccessToken)
 
 
 

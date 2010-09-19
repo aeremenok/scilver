@@ -7,7 +7,8 @@ import org.fest.swing.fixture.FrameFixture
 import org.testng.annotations.{Test, BeforeClass}
 import java.net.URL
 import twitter4j.http.AccessToken
-import org.scilver.{BasicApp, Credentials, mainFrame}
+import org.scilver.{Authentication, BasicApp, mainFrame}
+import org.scilver.db.Credentials
 
 /**
  * @author eav
@@ -26,7 +27,7 @@ class MainFrameTest {
     when(user.getProfileImageURL) thenReturn new URL("http://www.gstatic.com/codesite/ph/images/defaultlogo.png")
 
     new BasicApp {
-      override def login = Credentials(twitter, user, accessToken)
+      override def login = Authentication(Credentials(accessToken), twitter, user)
     }.startup(null)
   }
 
