@@ -19,7 +19,7 @@ object toolBar extends BoxPanel(Orientation.Horizontal) {
   this += followingAction
 }
 
-import App.credentials.user
+import App.auth.user
 
 object tweetAction extends Action(i18n tr "Tweet") {
   def apply = Dialog.showMessage(toolBar, "Tweet") // todo
@@ -37,9 +37,3 @@ object followersAction extends Action(i18n.tr("Followers")) {
 object followingAction extends Action(i18n.tr("Following")){
   def apply = Dialog.showMessage(toolBar, "Following") // todo
 }
-
-
-
-
-
-

@@ -8,7 +8,7 @@ import org.scilver._
  * Time: 12:09:58
  */
 
-class TestApp(fakeCredentials: Credentials) extends BasicApp
+class TestApp(fakeCredentials: Authentication) extends BasicApp
 {
   override def login = fakeCredentials
 }
