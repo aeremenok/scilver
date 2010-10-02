@@ -1,7 +1,7 @@
 package org.scilver
 
 import db.Credentials
-import db.dao.CredentialsDAO
+import db.dao.credentialsDAO
 import java.awt.Desktop
 import java.net.URI
 import swing.Dialog
@@ -15,32 +15,50 @@ import twitter4j.{User, TwitterException, TwitterFactory, Twitter}
 case class Authentication(credentials: Credentials, twitter: Twitter, user: User)
 
 object authentication {
-  def login = {
-    val twitter = new TwitterFactory().getInstance();
+  def login =
+    Dialog.showInput(message = i18n.tr("Please enter your screen name"), initial = "")
+    match {
+      case screenName: Some[String] => Some[Authentication](authByName(screenName.get))
+      case _ => None
+    }
+
+
+  private def authByName(screenName: String): Authentication = {
+    val twitter = new TwitterFactory().getInstance
     twitter.setOAuthConsumer("IESXizMmIy26f1pMVPYlhg", "5k31Fkf9re8koYf4MLGlt7Osrz89dUUa2b3ot99ZM")
-    enterPin(twitter)
+
+    credentialsDAO.findByName(screenName) match {
+      case credentials: Some[Credentials] => {
+        twitter.setOAuthAccessToken(credentials.get.toAccessToken)
+        val user = twitter.verifyCredentials
+        Authentication(credentials.get, twitter, user)
+      }
+      case _ => confirmPinOnSite(twitter)
+    }
   }
 
-  private def enterPin(twitter: Twitter): Authentication = {
+  private def confirmPinOnSite(twitter: Twitter): Authentication = {
     val request = twitter.getOAuthRequestToken
     Desktop.getDesktop.browse(new URI(request.getAuthorizationURL))
 
-    Dialog.showInput(message = i18n.tr("Enter pin"), initial = "") match {
-      case None => enterPin(twitter)
+    Dialog.showInput(message = i18n.tr("Please enter pin"), initial = "")
+    match {
       case pin: Some[String] =>
         try {
           val accessToken = twitter.getOAuthAccessToken(request, pin.get)
-          val user = twitter.verifyCredentials
-          val credentials = Credentials(accessToken)
-          CredentialsDAO.save(credentials)
-          Authentication(credentials, twitter, user)
+          Authentication(
+            credentialsDAO.save(Credentials(accessToken)),
+            twitter,
+            twitter.verifyCredentials
+            )
         }
         catch {
           case e: TwitterException => {
-            println(e.getMessage)
-            enterPin(twitter)
+            e.printStackTrace
+            confirmPinOnSite(twitter)
           }
         }
+      case None => confirmPinOnSite(twitter)
     }
   }
 }

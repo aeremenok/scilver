@@ -11,12 +11,19 @@ import javax.swing.UIManager
 object App extends SwingApplication {
   val version = "0.1";
   val title = "Scilver v." + version;
-  lazy val auth = authentication.login
+  var auth: Authentication = null
 
   override def startup(args: Array[String]) {
     initLaf
-    mainFrame.visible = true
+    authentication.login match {
+      case a: Some[Authentication] => {
+        auth = a.get
+        mainFrame.visible = true
+      }
+      case _ => shutdown
+    }
   }
+
 
   def initLaf =
     if (!setLaf("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"))
@@ -24,7 +31,8 @@ object App extends SwingApplication {
 
   def setLaf(laf: String): Boolean =
     try {
-      UIManager.setLookAndFeel(laf); true
+      UIManager.setLookAndFeel(laf);
+      true
     }
     catch {
       case _ => false
