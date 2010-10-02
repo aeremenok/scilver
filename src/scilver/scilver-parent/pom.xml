@@ -42,4 +42,7 @@
             <url>http://scala-tools.org/repo-releases</url>
         </pluginRepository>
     </pluginRepositories>
+    <build>
+        <directory>${java.io.tmpdir}/${groupId}/${artifactId}/target</directory>
+    </build>
 </project>

@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="9042a94b-b017-432f-b01b-e79532cb992c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/CredentialsDAO.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/TestApp.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/TestApp.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_3_2_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_4_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/pom.xml" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/pom.xml" />
+    <list default="true" readonly="true" id="9042a94b-b017-432f-b01b-e79532cb992c" name="Default" comment="kkkkkkkkkkkkkkkkkkkkk">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/H2Connector.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_3_4_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_4_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_2_140.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/TestApp.scala" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-parent.iml" afterPath="$PROJECT_DIR$/scilver-parent/scilver-parent.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/CredentialsDAO.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/credentialsDAO.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/CredentialsDAOTest.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/scilver-main.iml" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/scilver-main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_1_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/pom.xml" afterPath="$PROJECT_DIR$/scilver-parent/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/mockery.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala" />
     </list>
-    <ignored path="scilver.iws" />
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="scilver.iws" />
     <ignored path="$USER_HOME_GRAILS$/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,19 +78,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="H2Connector.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/H2Connector.scala">
+      <file leaf-file-name="MainFrameTest.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CredentialsDAO.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/CredentialsDAO.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="3" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="24" column="45" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,25 +90,16 @@
       <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="12" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
+            <state line="16" column="11" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/pom.xml">
+      <file leaf-file-name="SwingApplication.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/SwingApplication.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="21" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toolBar.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="386" selection-end="386" vertical-scroll-proportion="0.54444444">
+            <state line="1" column="32" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,25 +108,52 @@
       <file leaf-file-name="authentication.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="3" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
+            <state line="49" column="29" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrameTest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala">
+      <file leaf-file-name="DAO.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="3" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0">
+            <state line="20" column="12" selection-start="447" selection-end="447" vertical-scroll-proportion="0.21965317">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestApp.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/TestApp.scala">
+      <file leaf-file-name="TwitterOAuthSupportBaseImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterOAuthSupportBaseImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+            <state line="161" column="49" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="credentialsDAO.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/credentialsDAO.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="15" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mockery.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/mockery.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="83" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="34" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,7 +162,7 @@
       <file leaf-file-name="Credentials.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="6" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+            <state line="12" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,22 +182,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/Presenter.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/specs/TimelineSpec.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/specs/MainFrameSpec.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/DB.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/UserAccess.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/H2Connector.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/CredentialsDAO.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/TestApp.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/pom.xml" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/CredentialsDAOTest.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/mockery.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/CredentialsDAO.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala" />
       </list>
     </option>
   </component>
@@ -221,48 +214,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="scilver-main" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="scilver-main" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="org.hibernate:hibernate-core:3.3.2.GA" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependencyNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="scilver-main" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -316,7 +267,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -337,81 +291,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,12 +308,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="test.env" />
       <recent name="org.scilver.db" />
       <recent name="org.scilver" />
       <recent name="test" />
@@ -771,13 +652,45 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="6">
+    <configuration default="false" name="CredentialsDAOTest" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
+      <module name="scilver-main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test.cases" />
+      <option name="MAIN_CLASS_NAME" value="test.cases.CredentialsDAOTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.App" />
       <item index="1" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
       <item index="2" class="java.lang.String" itemvalue="Maven.scilver-parent [package]" />
       <item index="3" class="java.lang.String" itemvalue="Specs.TimelineSpec" />
       <item index="4" class="java.lang.String" itemvalue="Specs.MainFrameSpec" />
       <item index="5" class="java.lang.String" itemvalue="TestNG.MainFrameTest" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.CredentialsDAOTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -837,7 +750,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="725" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="720" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -845,12 +758,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56666666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6087719" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23592085" sideWeight="0.45614034" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23592085" sideWeight="0.7719298" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2305936" sideWeight="0.45614034" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2305936" sideWeight="0.7719298" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53157896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -898,114 +811,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar!/scala/collection/generic/SeqFactory.class">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/mockery.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="163" selection-start="196" selection-end="196" vertical-scroll-proportion="0.029880479">
+        <state line="9" column="83" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/collection/immutable/List.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="437" column="24" selection-start="12887" selection-end="12887" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/H2Connector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/CredentialsDAO.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/Credentials.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="6" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="75" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+        <state line="21" column="34" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="3" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0">
+        <state line="24" column="45" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/TestApp.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/Option.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+        <state line="51" column="0" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.028901733">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/credentialsDAO.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="3" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
+        <state line="11" column="15" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1-sources.jar!/org/slf4j/impl/Log4jLoggerAdapter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/http/Authorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="32" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.31791908">
+        <state line="35" column="0" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.2777778">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar!/org/slf4j/helpers/MessageFormatter.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/http/OAuthAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="168" selection-end="168" vertical-scroll-proportion="0.121212125">
+        <state line="53" column="19" selection-start="2343" selection-end="2343" vertical-scroll-proportion="-0.7171315">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8-sources.jar!/org/slf4j/helpers/MessageFormatter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/conf/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="39" column="17" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/Log4jLoggerAdapter.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/http/AuthorizationFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.8245614">
+        <state line="37" column="54" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/pom.xml">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="21" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0">
+        <state line="4" column="28" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="58" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterOAuthSupportBaseImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="49" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/SwingApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="32" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
+        <state line="16" column="11" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="386" selection-end="386" vertical-scroll-proportion="0.54444444">
+        <state line="49" column="29" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="12" selection-start="447" selection-end="447" vertical-scroll-proportion="0.21965317">
           <folding />
         </state>
       </provider>

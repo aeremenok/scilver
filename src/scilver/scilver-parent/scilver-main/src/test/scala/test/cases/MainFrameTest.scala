@@ -1,14 +1,13 @@
 package test.cases
 
-import org.mockito.Mockito
 import twitter4j.{User, Twitter}
-import Mockito._
 import org.fest.swing.fixture.FrameFixture
 import org.testng.annotations.{Test, BeforeClass}
 import java.net.URL
 import twitter4j.http.AccessToken
-import org.scilver.{Authentication, BasicApp, mainFrame}
-import org.scilver.db.Credentials
+import org.scilver.mainFrame
+import test.env.mockery._
+import org.mockito.Mockito.when
 
 /**
  * @author eav
@@ -18,17 +17,17 @@ import org.scilver.db.Credentials
 class MainFrameTest {
   @BeforeClass
   def setUp {
-    val twitter = mock(classOf[Twitter])
-    val user = mock(classOf[User])
-    val accessToken = mock(classOf[AccessToken])
+    val twitter = mock[Twitter]
+    val user = mock[User]
+    val accessToken = mock[AccessToken]
 
     when(twitter.verifyCredentials) thenReturn user
     when(user.getScreenName) thenReturn "eav"
     when(user.getProfileImageURL) thenReturn new URL("http://www.gstatic.com/codesite/ph/images/defaultlogo.png")
 
-    new BasicApp {
-      override def login = Authentication(Credentials(accessToken), twitter, user)
-    }.startup(null)
+    //    new BasicApp {
+    //      override def login = Authentication(Credentials(accessToken), twitter, user)
+    //    }.startup(null)
   }
 
   @Test
@@ -39,3 +38,5 @@ class MainFrameTest {
     frame button "Tweet" requireText "Tweet"
   }
 }
+
+
