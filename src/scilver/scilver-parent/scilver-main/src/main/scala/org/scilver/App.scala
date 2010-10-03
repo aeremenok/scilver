@@ -3,6 +3,10 @@ package org.scilver
 import db.HibernateConnector
 import scala.swing._
 import javax.swing.UIManager
+import org.jdesktop.swingx.JXPanel
+import java.awt.Color
+import org.jdesktop.swingx.painter._
+import org.jdesktop.swingx.painter.AbstractLayoutPainter.VerticalAlignment
 
 /**
  * @author eav
@@ -27,7 +31,10 @@ object App extends SwingApplication {
     }
   }
 
-  override def shutdown() = HibernateConnector.shutdown
+  override def shutdown() {
+    log.debug("closing the app")
+    HibernateConnector.shutdown
+  }
 
   def user = auth.user
 
@@ -51,8 +58,22 @@ object mainFrame extends MainFrame {
   contents = new BorderPanel {
     import BorderPanel.Position._
     add(toolBar, North)
-    add(new Button("Center"), Center)
+    add(Component.wrap(new MyPanel), Center)
   }
 
   maximize
+}
+
+class MyPanel extends JXPanel {
+  setBackgroundPainter(createPainter)
+
+  def createPainter = {
+    val rp1 = new RectanglePainter(20, 20, 20, 20, 20, 20);
+    rp1.setFillPaint(Color.ORANGE);
+    rp1.setBorderPaint(Color.ORANGE.darker);
+    rp1.setStyle(AbstractAreaPainter.Style.BOTH);
+    rp1.setBorderWidth(5);
+    rp1.setAntialiasing(true);
+    new CompoundPainter(rp1, new GlossPainter());
+  }
 }

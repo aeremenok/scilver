@@ -17,7 +17,7 @@ object credentialsDAO extends DAO[Credentials] {
       val criteria = session.createCriteria(entityClass)
       criteria.add(Restrictions.eq("screenName", name))
       criteria.uniqueResult match {
-        case credentials: Credentials => Some[Credentials](credentials)
+        case credentials: Credentials => Some(credentials)
         case _ => None
       }
   }

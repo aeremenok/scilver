@@ -9,6 +9,7 @@ import org.mockito.Mockito.when
 import org.scilver.db.Credentials
 import org.scilver._
 import org.testng.annotations.{AfterClass, Test, BeforeClass}
+import test.env.env
 
 /**
  * @author eav
@@ -42,10 +43,10 @@ object FakeAuthService extends AuthService {
 
     when(twitter.verifyCredentials) thenReturn user
     when(user.getScreenName) thenReturn "eav"
-    when(user.getProfileImageURL) thenReturn new URL("http://www.gstatic.com/codesite/ph/images/defaultlogo.png")
+    when(user.getProfileImageURL) thenReturn getClass.getClassLoader.getResource("im-user.png")
 
     val c = Credentials(0, "eav", "token", "tokenSecret")
 
-    Some[Authentication](Authentication(c, twitter, user))
+    Some(Authentication(c, twitter, user))
   }
 }

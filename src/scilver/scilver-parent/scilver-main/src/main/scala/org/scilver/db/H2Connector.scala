@@ -22,15 +22,19 @@ class H2Connector extends ConnectionProvider {
 
   def getConnection = pool.getConnection
 
-  def configure(ingored: Properties) = {
+  def configure(ingored: Properties) {
     close
 
-    val home = System.getProperty("user.home")
-    val scilverDir = home + "/.scilver/db/main"
     val params = "TRACE_LEVEL_FILE=1;TRACE_LEVEL_SYSTEM_OUT=0;TRACE_MAX_FILE_SIZE=1;AUTO_SERVER=TRUE"
-    val url = "jdbc:h2:nio:" + scilverDir + ";" + params;
+    val url = "jdbc:h2:nio:" + dbConfig.scilverDbDir + ";" + params;
 
     pool = JdbcConnectionPool.create(url, "sa", "")
     pool.setMaxConnections(5)
   }
+}
+
+object dbConfig {
+  var dbDir = System.getProperty("user.home")
+
+  def scilverDbDir = dbDir + "/.scilver/db/main"
 }

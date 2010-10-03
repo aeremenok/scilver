@@ -17,7 +17,7 @@ trait DAO[E] {
   def getById(id: Serializable): Option[E] = query {
     session =>
       session.get(entityClass, id) match {
-        case e: E => Some[E](e)
+        case e: E => Some(e)
         case _ => None
       }
   }

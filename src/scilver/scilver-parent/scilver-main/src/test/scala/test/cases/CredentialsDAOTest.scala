@@ -2,8 +2,8 @@ package test.cases
 
 import org.scilver.db.dao.credentialsDAO
 import org.testng.annotations.{BeforeClass, Test}
-import org.scilver.db.{HibernateConnector, Credentials}
-import org.scilver.log
+import org.scilver.db.Credentials
+import test.env.dbEnv
 
 /**
  * @author eav
@@ -13,30 +13,17 @@ import org.scilver.log
 
 class CredentialsDAOTest {
   @BeforeClass
-  def setUp {
-    log.init
-
-    val c = HibernateConnector.openSession.connection
-    try {c.prepareStatement("delete from Credentials").executeUpdate}
-    finally c.close
-  }
-
-  @Test
-  def loadFirst {
-    val c = credentialsDAO.getById(1)
-    assert(c == None)
-  }
+  def setUp = dbEnv.setUp(this)
 
   var credentials: Credentials = _
 
+  @Test
+  def loadFirst =
+    assert(credentialsDAO.getById(1) == None)
+
   @Test(dependsOnMethods = Array("loadFirst"))
   def saveOne {
-    credentials = new Credentials(
-      userId = 1,
-      screenName = "eav",
-      token = "token",
-      tokenSecret = "secret"
-      )
+    credentials = Credentials(1, "eav", "token", "secret")
     credentialsDAO.save(credentials)
   }
 
