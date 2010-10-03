@@ -1,5 +1,6 @@
 package org.scilver
 
+import db.HibernateConnector
 import scala.swing._
 import javax.swing.UIManager
 
@@ -11,10 +12,12 @@ import javax.swing.UIManager
 object App extends SwingApplication {
   val version = "0.1";
   val title = "Scilver v." + version;
-  var auth: Authentication = null
+  private var auth: Authentication = _
 
   override def startup(args: Array[String]) {
+    log.init
     initLaf
+
     authentication.login match {
       case a: Some[Authentication] => {
         auth = a.get
@@ -24,6 +27,9 @@ object App extends SwingApplication {
     }
   }
 
+  override def shutdown() = HibernateConnector.shutdown
+
+  def user = auth.user
 
   def initLaf =
     if (!setLaf("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"))

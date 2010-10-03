@@ -12,7 +12,7 @@ import java.util.Properties
  */
 
 class H2Connector extends ConnectionProvider {
-  private var pool: JdbcConnectionPool = null
+  private var pool: JdbcConnectionPool = _
 
   def supportsAggressiveRelease = false
 

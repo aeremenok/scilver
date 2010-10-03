@@ -10,9 +10,11 @@ import org.hibernate.criterion.Restrictions
  */
 
 object credentialsDAO extends DAO[Credentials] {
+  protected def entityClass = classOf[Credentials]
+
   def findByName(name: String): Option[Credentials] = query {
     session =>
-      val criteria = session.createCriteria(classOf[Credentials])
+      val criteria = session.createCriteria(entityClass)
       criteria.add(Restrictions.eq("screenName", name))
       criteria.uniqueResult match {
         case credentials: Credentials => Some[Credentials](credentials)

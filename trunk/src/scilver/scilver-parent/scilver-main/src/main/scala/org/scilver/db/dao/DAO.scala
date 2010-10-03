@@ -3,6 +3,7 @@ package org.scilver.db.dao
 import org.hibernate.Session
 import java.io.Serializable
 import org.scilver.db.{HibernateConnector => JPA}
+import org.scilver.log
 
 /**
  * @author eav
@@ -11,28 +12,34 @@ import org.scilver.db.{HibernateConnector => JPA}
  */
 
 trait DAO[E] {
-  def getById[E](id: Serializable)(implicit m: Manifest[E]): E = query {
-    session => session.get(m.erasure, id).asInstanceOf[E]
+  protected def entityClass: Class[E]
+
+  def getById(id: Serializable): Option[E] = query {
+    session =>
+      session.get(entityClass, id) match {
+        case e: E => Some[E](e)
+        case _ => None
+      }
   }
 
-  def save[E](entity: E): E = modify {
+  def save(entity: E): E = modify {
     session => {
       session.persist(entity)
       entity
     }
   }
 
-  def delete[E](entity: E) = modify {
+  def delete(entity: E) = modify {
     session => session.delete(entity)
   }
 
-  def query[E](f: Session => E): E = {
+  protected def query[T](f: Session => T): T = {
     val session = JPA.openSession
     try {f(session)}
     finally JPA.close(session)
   }
 
-  def modify[E](f: Session => E): E = {
+  protected def modify[T](f: Session => T): T = {
     val session = JPA.openSession
     try {
       session.beginTransaction
@@ -43,7 +50,7 @@ trait DAO[E] {
     }
     catch {
       case t: Throwable => {
-        t.printStackTrace
+        log.error(t, t)
         session.getTransaction.rollback
         throw new Error(t)
       }

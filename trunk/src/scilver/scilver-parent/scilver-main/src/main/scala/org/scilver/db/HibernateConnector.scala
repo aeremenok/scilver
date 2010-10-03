@@ -21,6 +21,8 @@ object HibernateConnector {
   def openSession = sessionFactory.openSession
 
   def close(session: Session) = session.close
+
+  def shutdown = sessionFactory.close
 }
 
 object scalaJPA{

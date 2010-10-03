@@ -2,12 +2,13 @@ package test.cases
 
 import twitter4j.{User, Twitter}
 import org.fest.swing.fixture.FrameFixture
-import org.testng.annotations.{Test, BeforeClass}
 import java.net.URL
 import twitter4j.http.AccessToken
-import org.scilver.mainFrame
 import test.env.mockery._
 import org.mockito.Mockito.when
+import org.scilver.db.Credentials
+import org.scilver._
+import org.testng.annotations.{AfterClass, Test, BeforeClass}
 
 /**
  * @author eav
@@ -17,17 +18,8 @@ import org.mockito.Mockito.when
 class MainFrameTest {
   @BeforeClass
   def setUp {
-    val twitter = mock[Twitter]
-    val user = mock[User]
-    val accessToken = mock[AccessToken]
-
-    when(twitter.verifyCredentials) thenReturn user
-    when(user.getScreenName) thenReturn "eav"
-    when(user.getProfileImageURL) thenReturn new URL("http://www.gstatic.com/codesite/ph/images/defaultlogo.png")
-
-    //    new BasicApp {
-    //      override def login = Authentication(Credentials(accessToken), twitter, user)
-    //    }.startup(null)
+    authentication.authService = FakeAuthService
+    App.startup(Array.empty)
   }
 
   @Test
@@ -37,6 +29,23 @@ class MainFrameTest {
     frame button "eav" requireText "eav"
     frame button "Tweet" requireText "Tweet"
   }
+
+  @AfterClass
+  def tearDown() = App.shutdown
 }
 
+object FakeAuthService extends AuthService {
+  def login = {
+    val twitter = mock[Twitter]
+    val user = mock[User]
+    val accessToken = mock[AccessToken]
 
+    when(twitter.verifyCredentials) thenReturn user
+    when(user.getScreenName) thenReturn "eav"
+    when(user.getProfileImageURL) thenReturn new URL("http://www.gstatic.com/codesite/ph/images/defaultlogo.png")
+
+    val c = Credentials(0, "eav", "token", "tokenSecret")
+
+    Some[Authentication](Authentication(c, twitter, user))
+  }
+}
