@@ -21,7 +21,7 @@ object log {
   }
 
 //  @elidable(INFO)
-  def debug(message: Any) = logger.debug(String.valueOf(message))
+  def debug(message: => Any) = logger.debug(String.valueOf(message))
 
-  def error(message: Any, e: Throwable) = logger.error(String.valueOf(message), e)
+  def error(message: => Any, e: Throwable) = logger.error(String.valueOf(message), e)
 }

@@ -6,13 +6,16 @@ import java.awt.Desktop
 import java.net.URI
 import swing.Dialog
 import twitter4j.{User, TwitterException, TwitterFactory, Twitter}
-
 /**
  * @author eav
  * Date: 28.08.2010
  * Time: 12:54:04
  */
-case class Authentication(credentials: Credentials, twitter: Twitter, user: User)
+case class Authentication(credentials: Credentials, twitter: Twitter, user: User){
+  @throws(classOf[TwitterException])
+  def this(credentials: Credentials, twitter: Twitter) =
+    this(credentials, twitter, twitter.verifyCredentials)
+}
 
 object authentication {
   var authService: AuthService = AuthServiceImpl
@@ -26,33 +29,25 @@ trait AuthService {
 
 object AuthServiceImpl extends AuthService {
   def login =
-    Dialog.showInput(message = i18n.tr("Please enter your screen name"), initial = "")
-    match {
-      case screenName: Some[String] =>
-        val auth = authByName(screenName.get)
-        log.debug("logged in successfully")
-        Some[Authentication](auth)
-
+    Dialog.showInput(message = i18n.tr("Please enter your user name"), initial = "") match {
+      case screenName: Some[String] => authByName(screenName.get)
       case _ => None
     }
 
-  private def authByName(screenName: String): Authentication = {
+  private def authByName(screenName: String): Option[Authentication] = {
     val twitter = new TwitterFactory().getInstance
     twitter.setOAuthConsumer("IESXizMmIy26f1pMVPYlhg", "5k31Fkf9re8koYf4MLGlt7Osrz89dUUa2b3ot99ZM")
 
     credentialsDAO.findByName(screenName) match {
       case credentials: Some[Credentials] =>
-        log.debug("credentials loaded from db" + credentials)
-
         twitter.setOAuthAccessToken(credentials.get.toAccessToken)
-        val user = twitter.verifyCredentials
-        Authentication(credentials.get, twitter, user)
+        Some(new Authentication(credentials.get, twitter))
 
       case _ => confirmPinOnSite(twitter)
     }
   }
 
-  private def confirmPinOnSite(twitter: Twitter): Authentication = {
+  private def confirmPinOnSite(twitter: Twitter): Option[Authentication] = {
     val request = twitter.getOAuthRequestToken
     Desktop.getDesktop.browse(new URI(request.getAuthorizationURL))
 
@@ -61,9 +56,7 @@ object AuthServiceImpl extends AuthService {
         try {
           val accessToken = twitter.getOAuthAccessToken(request, pin.get)
           val credentials = credentialsDAO.save(Credentials(accessToken))
-          log.debug("acquired credentials " + credentials)
-          val user = twitter.verifyCredentials
-          Authentication(credentials, twitter, user)
+          Some(new Authentication(credentials, twitter))
         }
         catch {
           case e: TwitterException => {
@@ -71,7 +64,8 @@ object AuthServiceImpl extends AuthService {
             confirmPinOnSite(twitter)
           }
         }
-      case None => confirmPinOnSite(twitter)
+
+      case _ => None
     }
   }
 }
