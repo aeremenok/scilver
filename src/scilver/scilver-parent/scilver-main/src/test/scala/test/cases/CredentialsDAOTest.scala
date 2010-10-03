@@ -3,7 +3,7 @@ package test.cases
 import org.scilver.db.dao.credentialsDAO
 import org.testng.annotations.{BeforeClass, Test}
 import org.scilver.db.{HibernateConnector, Credentials}
-import org.apache.log4j.PropertyConfigurator
+import org.scilver.log
 
 /**
  * @author eav
@@ -14,9 +14,7 @@ import org.apache.log4j.PropertyConfigurator
 class CredentialsDAOTest {
   @BeforeClass
   def setUp {
-    val url = getClass.getClassLoader.getResource("log4j.properties")
-    assert(url != null)
-    PropertyConfigurator.configure(url)
+    log.init
 
     val c = HibernateConnector.openSession.connection
     try {c.prepareStatement("delete from Credentials").executeUpdate}
@@ -25,13 +23,13 @@ class CredentialsDAOTest {
 
   @Test
   def loadFirst {
-    val c = credentialsDAO.getById[Credentials](id = 1)
-    assert(c == null)
+    val c = credentialsDAO.getById(1)
+    assert(c == None)
   }
 
-  var credentials: Credentials = null
+  var credentials: Credentials = _
 
-  @Test(dependsOnMethods = Array[String]("loadFirst"))
+  @Test(dependsOnMethods = Array("loadFirst"))
   def saveOne {
     credentials = new Credentials(
       userId = 1,
@@ -42,9 +40,14 @@ class CredentialsDAOTest {
     credentialsDAO.save(credentials)
   }
 
-  @Test(dependsOnMethods = Array[String]("saveOne"))
+  @Test(dependsOnMethods = Array("saveOne"))
   def loadSaved {
-    val c = credentialsDAO.getById[Credentials](1)
-    assert(c == credentials)
+    val c1 = credentialsDAO.getById(1)
+    assert(c1.get == credentials)
+
+    val c2 = credentialsDAO.findByName("eav")
+    assert(c2.get == credentials)
+
+    assert(!(c1.get eq c2.get))
   }
 }
