@@ -3,15 +3,14 @@ package org.scilver.db.dao
 import org.hibernate.Session
 import java.io.Serializable
 import org.scilver.db.{HibernateConnector => JPA}
-import org.scilver.log
+import org.scilver.{Loggable, log}
 
 /**
  * @author eav
  * Date: 20.09.2010
  * Time: 22:57:48
  */
-
-trait DAO[E] {
+trait DAO[E] extends Loggable {
   protected def entityClass: Class[E]
 
   def getById(id: Serializable): Option[E] = query {
@@ -50,7 +49,7 @@ trait DAO[E] {
     }
     catch {
       case t: Throwable => {
-        log.error(t, t)
+        error(t, t)
         session.getTransaction.rollback
         throw new Error(t)
       }
