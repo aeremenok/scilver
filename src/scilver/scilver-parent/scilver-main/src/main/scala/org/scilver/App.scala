@@ -13,7 +13,7 @@ import org.jdesktop.swingx.painter.AbstractLayoutPainter.VerticalAlignment
  * Date: 28.08.2010
  * Time: 12:54:04
  */
-object App extends SwingApplication {
+object App extends SwingApplication with Loggable {
   val version = "0.1";
   val title = "Scilver v." + version;
   private var auth: Authentication = _
@@ -32,11 +32,13 @@ object App extends SwingApplication {
   }
 
   override def shutdown() {
-    log.debug("closing the app")
+    debug("closing the app")
     HibernateConnector.shutdown
   }
 
   def user = auth.user
+
+  def twitter = auth.twitter
 
   def initLaf =
     if (!setLaf("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"))
@@ -58,22 +60,10 @@ object mainFrame extends MainFrame {
   contents = new BorderPanel {
     import BorderPanel.Position._
     add(toolBar, North)
-    add(Component.wrap(new MyPanel), Center)
+    add(new ScrollPane(TimelineView), Center)
   }
 
-  maximize
-}
-
-class MyPanel extends JXPanel {
-  setBackgroundPainter(createPainter)
-
-  def createPainter = {
-    val rp1 = new RectanglePainter(20, 20, 20, 20, 20, 20);
-    rp1.setFillPaint(Color.ORANGE);
-    rp1.setBorderPaint(Color.ORANGE.darker);
-    rp1.setStyle(AbstractAreaPainter.Style.BOTH);
-    rp1.setBorderWidth(5);
-    rp1.setAntialiasing(true);
-    new CompoundPainter(rp1, new GlossPainter());
-  }
+  minimumSize = new Dimension(800,600)
+  pack
+  centerOnScreen
 }

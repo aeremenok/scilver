@@ -27,7 +27,7 @@ trait AuthService {
   def login: Option[Authentication]
 }
 
-object AuthServiceImpl extends AuthService {
+object AuthServiceImpl extends AuthService with Loggable {
   def login =
     Dialog.showInput(message = i18n.tr("Please enter your user name"), initial = "") match {
       case screenName: Some[String] => authByName(screenName.get)
@@ -60,7 +60,7 @@ object AuthServiceImpl extends AuthService {
         }
         catch {
           case e: TwitterException => {
-            log.error(e, e)
+            error(e, e)
             confirmPinOnSite(twitter)
           }
         }
