@@ -1,7 +1,7 @@
 package org.scilver
 
 import scala.swing._
-import javax.swing.ImageIcon
+import javax.swing.{Box, ImageIcon}
 
 /**
  * @author eav
@@ -16,6 +16,10 @@ object toolBar extends BoxPanel(Orientation.Horizontal) {
   this += tweetAction
   this += followersAction
   this += followingAction
+
+  peer.add(Box.createHorizontalGlue)
+
+  contents += Component.wrap(tasks)
 }
 
 object tweetAction extends Action(i18n tr "Tweet") {

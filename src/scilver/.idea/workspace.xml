@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="9042a94b-b017-432f-b01b-e79532cb992c" name="Default" comment="kkkkkkkkkkkkkkkkkkkkk">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projectCodeStyle.xml" afterPath="$PROJECT_DIR$/.idea/projectCodeStyle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/tasks.scala" />
     </list>
-    <ignored path="$USER_HOME_GRAILS$/" />
-    <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="scilver.iws" />
+    <ignored path="$USER_HOME_GRAILS$/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,91 +67,91 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="28" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TimelineView.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="42" selection-start="1791" selection-end="1791" vertical-scroll-proportion="1.5270936">
+            <state line="20" column="40" selection-start="505" selection-end="505" vertical-scroll-proportion="0.49261084">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JTable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/javax/swing/JTable.java">
+      <file leaf-file-name="RectanglePainter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/painter/RectanglePainter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="13" selection-start="8916" selection-end="8916" vertical-scroll-proportion="0.0">
+            <state line="72" column="11" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scrollable.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Scrollable.scala">
+      <file leaf-file-name="toolBar.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JXPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/JXPanel.java">
+      <file leaf-file-name="Component.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Component.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="11" selection-start="4082" selection-end="4082" vertical-scroll-proportion="0.0">
+            <state line="35" column="6" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagePainter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/painter/ImagePainter.java">
+      <file leaf-file-name="Box.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/javax/swing/Box.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="11" selection-start="4621" selection-end="4621" vertical-scroll-proportion="0.0">
+            <state line="228" column="28" selection-start="7890" selection-end="7890" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JXLabel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/JXLabel.java">
+      <file leaf-file-name="SequentialContainer.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/SequentialContainer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="361" column="16" selection-start="12574" selection-end="12574" vertical-scroll-proportion="0.0">
+            <state line="19" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Label.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/Label.class">
+      <file leaf-file-name="tasks.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/tasks.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="12" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+            <state line="12" column="7" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Label.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Label.scala">
+      <file leaf-file-name="AtomicInteger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="39" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+            <state line="187" column="21" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrameTest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala">
+      <file leaf-file-name="DAO.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="44" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
+            <state line="46" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JXBusyLabel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/JXBusyLabel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="235" column="16" selection-start="7459" selection-end="7459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/HibernateConnector.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/env/dbEnv.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/H2Connector.scala" />
@@ -190,6 +184,8 @@
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/Timeline.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/taskIndicator.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" />
       </list>
     </option>
@@ -262,6 +258,76 @@
     <panes>
       <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver-main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver-main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toolBar.scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver-main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scilver-main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.scilver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -396,76 +462,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toolBar.scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,9 +478,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -498,7 +494,7 @@
       <recent name="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/domain" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainFrameTest">
+  <component name="RunManager" selected="Application.App">
     <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <extension name="snapshooter" />
@@ -902,7 +898,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327818" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60703206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -912,13 +907,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17820719" sideWeight="0.6608066" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24906066" sideWeight="0.6608066" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3319545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327818" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24906066" sideWeight="0.6608066" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -957,114 +953,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Window.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/SwingWorker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="6" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0">
+        <state line="8" column="38" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/Label.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/actors/Actor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+        <state line="744" column="40" selection-start="21990" selection-end="21990" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Label.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/painter/BusyPainter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="39" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+        <state line="561" column="37" selection-start="18985" selection-end="18985" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/JXLabel.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/volatile.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="361" column="16" selection-start="12574" selection-end="12574" vertical-scroll-proportion="0.0">
+        <state line="15" column="6" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/java/awt/image/BufferedImage.java">
+    <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="13" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.2955665">
+        <state line="187" column="21" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/painter/ImagePainter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/BoxPanel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="11" selection-start="4621" selection-end="4621" vertical-scroll-proportion="0.0">
+        <state line="2" column="6" selection-start="137" selection-end="137" vertical-scroll-proportion="0.032017075">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/JXPanel.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/BoxPanel.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="11" selection-start="4082" selection-end="4082" vertical-scroll-proportion="0.0">
+        <state line="20" column="6" selection-start="820" selection-end="820" vertical-scroll-proportion="0.22411953">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterResponse.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/SequentialContainer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1774" selection-end="1774" vertical-scroll-proportion="0.2955665">
+        <state line="19" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/ResponseList.java">
+    <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/javax/swing/Box.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="50" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.27093595">
+        <state line="228" column="28" selection-start="7890" selection-end="7890" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/Paging.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Component.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="11" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.1724138">
+        <state line="35" column="6" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/ScrollPane.class">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.098522164">
+        <state line="46" column="0" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="28" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Scrollable.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/JXBusyLabel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+        <state line="235" column="16" selection-start="7459" selection-end="7459" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/Table.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/swinglabs/swingx-core/1.6.2-2/swingx-core-1.6.2-2-sources.jar!/org/jdesktop/swingx/painter/RectanglePainter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="73" selection-start="93" selection-end="93" vertical-scroll-proportion="-1.0388514">
+        <state line="72" column="11" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/javax/swing/JTable.java">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/tasks.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="13" selection-start="8916" selection-end="8916" vertical-scroll-proportion="0.0">
+        <state line="12" column="7" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="42" selection-start="1791" selection-end="1791" vertical-scroll-proportion="1.5270936">
+        <state line="20" column="40" selection-start="505" selection-end="505" vertical-scroll-proportion="0.49261084">
           <folding />
         </state>
       </provider>

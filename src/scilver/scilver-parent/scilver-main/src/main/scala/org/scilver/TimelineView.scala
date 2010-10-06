@@ -14,10 +14,13 @@ import twitter4j.{Paging, Status, ResponseList}
  * Time: 21:56:10
  */
 object TimelineView extends Table {
-  model = TimelineModel
 
-  TimelineModel.timeline = {
-    // todo
+  model = new TimelineModel
+  override def model = super.model.asInstanceOf[TimelineModel]
+
+  tasks execute (load, model timeline_=)
+
+  private def load = {
     val t1 = App.twitter.getFriendsTimeline
     val t2 = App.twitter.getFriendsTimeline(new Paging(2))
     t1.addAll(t2)
@@ -33,7 +36,7 @@ object TimelineView extends Table {
   rowHeight = 100
 }
 
-object TimelineModel extends DefaultTableModel(Array[Object]("Main"), 0) {
+class TimelineModel extends DefaultTableModel(Array[Object]("Main"), 0) {
   private var tl: ResponseList[Status] = _
 
   def timeline_=(tl: ResponseList[Status]) {
@@ -69,9 +72,9 @@ class TweetLabel(status: Status) extends JXLabel {
 
   setBackgroundPainter(createPainter)
   def createPainter = {
-    val rp1 = new RectanglePainter(5, 5, 5, 20, 20, 20);
-    rp1.setFillPaint(Color.ORANGE);
-    rp1.setBorderPaint(Color.ORANGE.darker);
+    val rp1 = new RectanglePainter(5, 5, 5, 5, 20, 20);
+    rp1.setFillPaint(Color.LIGHT_GRAY);
+    rp1.setBorderPaint(Color.LIGHT_GRAY.darker);
     rp1.setStyle(AbstractAreaPainter.Style.BOTH);
     rp1.setBorderWidth(3);
     rp1.setAntialiasing(true);
