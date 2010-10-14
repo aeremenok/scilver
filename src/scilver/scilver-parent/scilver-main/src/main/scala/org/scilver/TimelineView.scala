@@ -1,12 +1,13 @@
 package org.scilver
 
-import javax.swing.table.DefaultTableModel
 import java.awt.Color
 import scala.swing._
 import javax.swing.{SwingConstants, ImageIcon}
 import org.jdesktop.swingx.JXLabel
 import org.jdesktop.swingx.painter._
-import twitter4j.{Paging, Status, ResponseList}
+import twitter4j.{Paging, Status}
+import java.util.{List => JList}
+import org.scilver.view.RollingTableModel
 
 /**
  * @author eav
@@ -14,44 +15,24 @@ import twitter4j.{Paging, Status, ResponseList}
  * Time: 21:56:10
  */
 object TimelineView extends Table {
-
   model = new TimelineModel
   override def model = super.model.asInstanceOf[TimelineModel]
 
-  tasks execute (load, model timeline_=)
-
-  private def load = {
-    val t1 = App.twitter.getFriendsTimeline
-    val t2 = App.twitter.getFriendsTimeline(new Paging(2))
-    t1.addAll(t2)
-    t1
-  }
-
-  override protected def rendererComponent(isSelected: Boolean, focused: Boolean, row: Int, column: Int) = {
+  override protected def rendererComponent(isSelected: Boolean, focused: Boolean, row: Int, column: Int) =
     new StatusRenderer(apply(row, column).asInstanceOf[Status])
-  }
 
   peer.setTableHeader(null)
 
   rowHeight = 100
 }
 
-class TimelineModel extends DefaultTableModel(Array[Object]("Main"), 0) {
-  private var tl: ResponseList[Status] = _
+class TimelineModel extends RollingTableModel[Status](Array[Object]("Main")) {
+  private var currentPage: Int = 0
 
-  def timeline_=(tl: ResponseList[Status]) {
-    this.tl = tl
-    fireTableDataChanged
+  protected def loadPortion = {
+    currentPage += 1
+    App.twitter.getFriendsTimeline(new Paging(currentPage))
   }
-
-  def timeline = this.tl
-
-  override def isCellEditable(row: Int, column: Int) = false
-
-  override def getValueAt(row: Int, column: Int) = tl.get(row)
-
-  override def getRowCount =
-    if (tl != null) tl.size else 0
 }
 
 case class StatusRenderer(status: Status) extends BorderPanel {
