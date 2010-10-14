@@ -1,7 +1,8 @@
-package org.scilver
+package org.scilver.view
 
 import scala.swing._
 import javax.swing.{Box, ImageIcon}
+import org.scilver.{App, i18n}
 
 /**
  * @author eav

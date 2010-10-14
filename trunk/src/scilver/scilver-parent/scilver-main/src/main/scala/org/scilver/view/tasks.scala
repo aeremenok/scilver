@@ -1,4 +1,4 @@
-package org.scilver
+package org.scilver.view
 
 import org.jdesktop.swingx.JXBusyLabel
 import javax.swing.SwingWorker
@@ -12,7 +12,7 @@ import java.awt.{Color, Dimension}
  */
 object tasks extends JXBusyLabel(new Dimension(50, 50)) {
   setBusy(false)
-  setDelay(7)
+  setDelay(10)
   override def createBusyPainter(dim: Dimension) = {
     val p = super.createBusyPainter(dim)
     p.setPoints(50)
@@ -44,4 +44,3 @@ object tasks extends JXBusyLabel(new Dimension(50, 50)) {
     super.setBusy(busy)
   }
 }
-

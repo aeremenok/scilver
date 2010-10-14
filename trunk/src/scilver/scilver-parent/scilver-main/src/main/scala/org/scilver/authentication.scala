@@ -30,7 +30,7 @@ trait AuthService {
 object AuthServiceImpl extends AuthService with Loggable {
   def login =
     Dialog.showInput(message = i18n.tr("Please enter your user name"), initial = "") match {
-      case screenName: Some[String] => authByName(screenName.get)
+      case Some(screenName) => authByName(screenName)
       case _ => None
     }
 
@@ -39,9 +39,9 @@ object AuthServiceImpl extends AuthService with Loggable {
     twitter.setOAuthConsumer("IESXizMmIy26f1pMVPYlhg", "5k31Fkf9re8koYf4MLGlt7Osrz89dUUa2b3ot99ZM")
 
     credentialsDAO.findByName(screenName) match {
-      case credentials: Some[Credentials] =>
-        twitter.setOAuthAccessToken(credentials.get.toAccessToken)
-        Some(new Authentication(credentials.get, twitter))
+      case Some(credentials) =>
+        twitter.setOAuthAccessToken(credentials.toAccessToken)
+        Some(new Authentication(credentials, twitter))
 
       case _ => confirmPinOnSite(twitter)
     }
@@ -52,9 +52,9 @@ object AuthServiceImpl extends AuthService with Loggable {
     Desktop.getDesktop.browse(new URI(request.getAuthorizationURL))
 
     Dialog.showInput(message = i18n.tr("Please enter pin"), initial = "") match {
-      case pin: Some[String] =>
+      case Some(pin) =>
         try {
-          val accessToken = twitter.getOAuthAccessToken(request, pin.get)
+          val accessToken = twitter.getOAuthAccessToken(request, pin)
           val credentials = credentialsDAO.save(Credentials(accessToken))
           Some(new Authentication(credentials, twitter))
         }

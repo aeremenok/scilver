@@ -3,10 +3,7 @@ package org.scilver
 import db.HibernateConnector
 import scala.swing._
 import javax.swing.UIManager
-import org.jdesktop.swingx.JXPanel
-import java.awt.Color
-import org.jdesktop.swingx.painter._
-import org.jdesktop.swingx.painter.AbstractLayoutPainter.VerticalAlignment
+import org.scilver.view.{ExpandScrollPane, toolBar}
 
 /**
  * @author eav
@@ -26,6 +23,7 @@ object App extends SwingApplication with Loggable {
       case a: Some[Authentication] => {
         auth = a.get
         mainFrame.visible = true
+        TimelineView.model.expand
       }
       case _ => shutdown
     }
@@ -60,7 +58,7 @@ object mainFrame extends MainFrame {
   contents = new BorderPanel {
     import BorderPanel.Position._
     add(toolBar, North)
-    add(new ScrollPane(TimelineView), Center)
+    add(Component.wrap(ExpandScrollPane(TimelineView)), Center)
   }
 
   minimumSize = new Dimension(800,600)
