@@ -2,20 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="9042a94b-b017-432f-b01b-e79532cb992c" name="Default" comment="kkkkkkkkkkkkkkkkkkkkk">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/ListTableModel.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/tasks.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/tasks.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/loginDialog.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_swing_2_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_swing_2_8_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_reflect_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_reflect_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_1_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_1_0_GA.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/tr.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/tasks.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/tasks.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/CallbackDialog.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_2_140.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_2_140.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_4_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_4_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_3_4_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_3_4_0_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_swing_testng_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_swing_testng_1_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_swingx_core_1_6_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_swingx_core_1_6_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_4_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_4_0_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_3_2_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_3_2_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_8_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_assert_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_assert_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_jdk15_5_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_jdk15_5_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_util_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_util_1_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_swing_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_swing_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/PinDialog.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/scilver-main.iml" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/scilver-main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_twitter4j_twitter4j_core_2_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_twitter4j_twitter4j_core_2_1_3.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/TimelineView.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_5_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_5_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala" afterPath="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_8_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
     </list>
-    <ignored path="scilver.iws" />
+    <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$USER_HOME_GRIFFON$/" />
+    <ignored path="scilver.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,46 +106,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TimelineView.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala">
+      <file leaf-file-name="CallbackDialog.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/CallbackDialog.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="6" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+            <state line="15" column="2" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
+      <file leaf-file-name="PinDialog.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/PinDialog.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="33" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Component.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="6" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListTableModel.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/ListTableModel.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/tasks.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="613" selection-end="613" vertical-scroll-proportion="0.3112245">
+            <state line="10" column="83" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,43 +127,43 @@
       <file leaf-file-name="authentication.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="49" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+            <state line="32" column="22" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Orientable.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Orientable.scala">
+      <file leaf-file-name="TwitterOAuthSupportBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterOAuthSupportBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+            <state line="86" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Adjustable.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Adjustable.scala">
+      <file leaf-file-name="loginDialog.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/loginDialog.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+            <state line="15" column="1" selection-start="392" selection-end="392" vertical-scroll-proportion="0.19354838">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toolBar.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala">
+      <file leaf-file-name="log.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="36" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+            <state line="24" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="i18n.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala">
+      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+            <state line="21" column="20" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,22 +183,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/credentialsDAO.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/pom.xml" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/Timeline.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/toolBar.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/taskIndicator.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/RollingTableModel.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
-        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/ListTableModel.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/tr.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala" />
         <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/tasks.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/PinDialog.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/CallbackDialog.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala" />
+        <option value="$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/loginDialog.scala" />
       </list>
     </option>
   </component>
@@ -208,6 +215,16 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="scilver-main" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -262,215 +279,10 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authentication.scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ListTableModel.scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scilver-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -541,8 +353,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +361,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -639,17 +449,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleArgs" value="" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -974,29 +773,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1917" height="1122" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="720" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23991726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40592334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23832528" sideWeight="0.6649431" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1556568" sideWeight="0.5348432" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17820719" sideWeight="0.6608066" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21867882" sideWeight="0.5348432" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3319545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24906066" sideWeight="0.6608066" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45296168" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327818" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24905087" sideWeight="0.6608066" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1035,114 +834,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/collection/mutable/Buffer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="26" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/collection/mutable/IndexedSeq.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/scala/collection/mutable/ArraySeq.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="6" selection-start="1656" selection-end="1656" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/test/scala/test/cases/MainFrameTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="45" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.0">
+        <state line="31" column="28" selection-start="736" selection-end="736" vertical-scroll-proportion="0.6868132">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/toolBar.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/domain/Credentials.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+        <state line="26" column="20" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/i18n.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/db/dao/DAO.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+        <state line="23" column="6" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/TimelineView.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/log.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="6" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+        <state line="24" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Adjustable.scala">
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/PinDialog.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Orientable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/ScrollBar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="67" selection-start="988" selection-end="988" vertical-scroll-proportion="0.29475984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/ScrollPane.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="34" selection-start="3674" selection-end="3674" vertical-scroll-proportion="0.8719317">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/Component.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="49" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+        <state line="10" column="83" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+        <state line="21" column="20" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/ListTableModel.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0.jar!/scala/swing/Dialog.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+        <state line="3" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.17175573">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/tasks.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-swing/2.8.0/scala-swing-2.8.0-sources.jar!/scala/swing/RichWindow.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="613" selection-end="613" vertical-scroll-proportion="0.3112245">
+        <state line="193" column="10" selection-start="6998" selection-end="6998" vertical-scroll-proportion="0.21505377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/CallbackDialog.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3.jar!/twitter4j/TwitterOAuthSupportBaseImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="39" selection-start="907" selection-end="907" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterOAuthSupportBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/http/OAuthAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="24" selection-start="4646" selection-end="4646" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/http/OAuthSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3-sources.jar!/twitter4j/TwitterOAuthSupportBaseImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="33" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.6419753">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/authentication.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scilver-parent/scilver-main/src/main/scala/org/scilver/view/loginDialog.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="1" selection-start="392" selection-end="392" vertical-scroll-proportion="0.19354838">
           <folding />
         </state>
       </provider>
