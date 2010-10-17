@@ -5,8 +5,8 @@ package org.scilver
  * Date: 28.08.2010
  * Time: 12:54:04
  */
-object i18n {
-  def tr(text: String) = text // todo
+object tr {
+  def apply(text: String) = text // todo
 }
 
 

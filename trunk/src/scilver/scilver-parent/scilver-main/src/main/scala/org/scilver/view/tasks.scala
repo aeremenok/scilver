@@ -4,13 +4,12 @@ import org.jdesktop.swingx.JXBusyLabel
 import javax.swing.SwingWorker
 import java.util.concurrent.atomic.AtomicInteger
 import java.awt.{Color, Dimension}
-
 /**
  * @author eav
  * Date: 06.10.2010
  * Time: 23:10:39
  */
-object tasks extends JXBusyLabel(new Dimension(50, 50)) {
+class BusyLabel(size: Int) extends JXBusyLabel(new Dimension(size, size)) {
   setBusy(false)
   setDelay(10)
   override def createBusyPainter(dim: Dimension) = {
@@ -44,3 +43,5 @@ object tasks extends JXBusyLabel(new Dimension(50, 50)) {
     super.setBusy(busy)
   }
 }
+
+object tasks extends BusyLabel(50)
