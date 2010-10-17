@@ -2,7 +2,7 @@ package org.scilver.view
 
 import scala.swing._
 import javax.swing.{Box, ImageIcon}
-import org.scilver.{App, i18n}
+import org.scilver.{App, tr}
 
 /**
  * @author eav
@@ -23,7 +23,7 @@ object toolBar extends BoxPanel(Orientation.Horizontal) {
   contents += Component.wrap(tasks)
 }
 
-object tweetAction extends Action(i18n tr "Tweet") {
+object tweetAction extends Action(tr("Tweet")) {
   def apply = Dialog.showMessage(toolBar, "Tweet") // todo
 }
 
@@ -32,10 +32,10 @@ object profileAction extends Action(App.user.getScreenName) {
   def apply = Dialog.showMessage(toolBar, "User profile") // todo
 }
 
-object followersAction extends Action(i18n.tr("Followers")) {
+object followersAction extends Action(tr("Followers")) {
   def apply = Dialog.showMessage(toolBar, "Followers") // todo
 }
 
-object followingAction extends Action(i18n.tr("Following")) {
+object followingAction extends Action(tr("Following")) {
   def apply = Dialog.showMessage(toolBar, "Following") // todo
 }

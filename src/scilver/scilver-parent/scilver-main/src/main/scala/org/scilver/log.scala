@@ -22,6 +22,8 @@ trait Loggable {
   def debug(message: => Any) =
     logger.debug(String.valueOf(message))
 
-  def error(message: => Any, e: Throwable) =
+  def error(message: => Any, e: Throwable) = {
     logger.error(String.valueOf(message), e)
+    None
+  }
 }

@@ -20,11 +20,11 @@ object App extends SwingApplication with Loggable {
     initLaf
 
     authentication.login match {
-      case a: Some[Authentication] => {
-        auth = a.get
+      case Some(a) =>
+        auth = a
         mainFrame.visible = true
         TimelineView.model.expand
-      }
+
       case _ => shutdown
     }
   }
@@ -32,6 +32,7 @@ object App extends SwingApplication with Loggable {
   override def shutdown() {
     debug("closing the app")
     HibernateConnector.shutdown
+    System.exit(0)
   }
 
   def user = auth.user
@@ -52,7 +53,7 @@ object App extends SwingApplication with Loggable {
     }
 }
 
-object mainFrame extends MainFrame {
+object mainFrame extends Frame {
   title = App.title
 
   contents = new BorderPanel {
@@ -61,7 +62,9 @@ object mainFrame extends MainFrame {
     add(Component.wrap(ExpandScrollPane(TimelineView)), Center)
   }
 
-  minimumSize = new Dimension(800,600)
+  minimumSize = new Dimension(800, 600)
   pack
   centerOnScreen
+
+  override def closeOperation() = App.shutdown
 }

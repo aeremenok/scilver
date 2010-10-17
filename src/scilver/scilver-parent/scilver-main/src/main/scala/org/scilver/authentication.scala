@@ -4,17 +4,18 @@ import db.Credentials
 import db.dao.credentialsDAO
 import java.awt.Desktop
 import java.net.URI
-import swing.Dialog
 import twitter4j.{User, TwitterException, TwitterFactory, Twitter}
+import view.{pinDialog, loginDialog}
+
 /**
  * @author eav
  * Date: 28.08.2010
  * Time: 12:54:04
  */
-case class Authentication(credentials: Credentials, twitter: Twitter, user: User){
+case class Authentication(credentials: Credentials, twitter: Twitter, user: User) {
   @throws(classOf[TwitterException])
   def this(credentials: Credentials, twitter: Twitter) =
-    this(credentials, twitter, twitter.verifyCredentials)
+    this (credentials, twitter, twitter.verifyCredentials)
 }
 
 object authentication {
@@ -28,44 +29,39 @@ trait AuthService {
 }
 
 object AuthServiceImpl extends AuthService with Loggable {
-  def login =
-    Dialog.showInput(message = i18n.tr("Please enter your user name"), initial = "") match {
-      case Some(screenName) => authByName(screenName)
-      case _ => None
-    }
-
-  private def authByName(screenName: String): Option[Authentication] = {
+  private def createTwitter = {
     val twitter = new TwitterFactory().getInstance
     twitter.setOAuthConsumer("IESXizMmIy26f1pMVPYlhg", "5k31Fkf9re8koYf4MLGlt7Osrz89dUUa2b3ot99ZM")
+    twitter
+  }
 
-    credentialsDAO.findByName(screenName) match {
-      case Some(credentials) =>
-        twitter.setOAuthAccessToken(credentials.toAccessToken)
-        Some(new Authentication(credentials, twitter))
+  private lazy val twitter = createTwitter
+  private lazy val request = twitter.getOAuthRequestToken
 
-      case _ => confirmPinOnSite(twitter)
+  def login = loginDialog(authByName) match {
+    case None => showPinDialog
+    case x => x
+  }
+
+  private def authByName(screenName: String) = credentialsDAO.findByName(screenName) match {
+    case Some(credentials) =>
+      twitter.setOAuthAccessToken(credentials.toAccessToken)
+      Some(new Authentication(credentials, twitter))
+
+    case _ => {
+      Desktop.getDesktop.browse(new URI(request.getAuthorizationURL))
+      None
     }
   }
 
-  private def confirmPinOnSite(twitter: Twitter): Option[Authentication] = {
-    val request = twitter.getOAuthRequestToken
-    Desktop.getDesktop.browse(new URI(request.getAuthorizationURL))
+  private def showPinDialog = pinDialog(processPin)
 
-    Dialog.showInput(message = i18n.tr("Please enter pin"), initial = "") match {
-      case Some(pin) =>
-        try {
-          val accessToken = twitter.getOAuthAccessToken(request, pin)
-          val credentials = credentialsDAO.save(Credentials(accessToken))
-          Some(new Authentication(credentials, twitter))
-        }
-        catch {
-          case e: TwitterException => {
-            error(e, e)
-            confirmPinOnSite(twitter)
-          }
-        }
-
-      case _ => None
-    }
+  private def processPin(pin: String) = try {
+    val accessToken = twitter.getOAuthAccessToken(request, pin)
+    val credentials = credentialsDAO.save(Credentials(accessToken))
+    Some(new Authentication(credentials, twitter))
+  }
+  catch {
+    case e: TwitterException => error(e, e)
   }
 }
