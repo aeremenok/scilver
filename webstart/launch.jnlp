@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://scilver.googlecode.com/svn/webstart" href="launch.jnlp">
+ <information>
+    <title>Scilver</title>
+    <vendor>Andrey Yeremenok</vendor>
+    <homepage href="http://code.google.com/p/scilver/"/>
+    <description kind="one-line">Scilver</description>
+    <description kind="short">Scilver - a scala twitter client</description>
+    <description kind="tooltip">Scilver - a scala twitter client</description>
+    <icon href="http://www.gstatic.com/codesite/ph/images/defaultlogo.png" kind="default"/>
+    <shortcut online="false"><desktop/><menu submenu="Scilver"/></shortcut>
+ </information>
+ <security>
+ <all-permissions/>
+ </security>
+ <resources>
+    <j2se version="1.6+" initial-heap-size="32m" max-heap-size="128m" />
+    <property name="jnlp.versionEnabled" value="true"/>
+    
+<jar href="scilver-main-0.1-SNAPSHOT.jar" main="true"/>
+<jar href="scala-library-2.8.0.jar"/>
+<jar href="scala-swing-2.8.0.jar"/>
+<jar href="twitter4j-core-2.1.3.jar"/>
+<jar href="swingx-core-1.6.2-2.jar"/>
+<jar href="h2-1.2.140.jar"/>
+<jar href="hibernate-core-3.3.2.GA.jar"/>
+<jar href="antlr-2.7.7.jar"/>
+<jar href="commons-collections-3.1.jar"/>
+<jar href="dom4j-1.6.1.jar"/>
+<jar href="xml-apis-1.0.b2.jar"/>
+<jar href="jta-1.1.jar"/>
+<jar href="slf4j-api-1.5.8.jar"/>
+<jar href="hibernate-annotations-3.4.0.GA.jar"/>
+<jar href="ejb3-persistence-1.0.2.GA.jar"/>
+<jar href="hibernate-commons-annotations-3.1.0.GA.jar"/>
+<jar href="hibernate-entitymanager-3.4.0.GA.jar"/>
+<jar href="javassist-3.4.GA.jar"/>
+<jar href="cglib-2.2.jar"/>
+<jar href="asm-3.1.jar"/>
+<jar href="commons-logging-1.1.1.jar"/>
+<jar href="slf4j-log4j12-1.5.8.jar"/>
+<jar href="log4j-1.2.14.jar"/>
+
+ </resources>
+ <application-desc main-class="org.scilver.App">
+ </application-desc>
+</jnlp>
