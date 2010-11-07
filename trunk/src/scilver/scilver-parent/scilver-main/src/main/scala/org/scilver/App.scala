@@ -62,7 +62,7 @@ object mainFrame extends Frame {
     add(Component.wrap(ExpandScrollPane(TimelineView)), Center)
   }
 
-  minimumSize = new Dimension(800, 600)
+  minimumSize = new Dimension(600, 600)
   pack
   centerOnScreen
 

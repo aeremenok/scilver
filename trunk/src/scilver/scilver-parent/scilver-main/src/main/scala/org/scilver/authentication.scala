@@ -5,7 +5,7 @@ import db.dao.credentialsDAO
 import java.awt.Desktop
 import java.net.URI
 import twitter4j.{User, TwitterException, TwitterFactory, Twitter}
-import view.{pinDialog, loginDialog}
+import view.loginDialogs
 
 /**
  * @author eav
@@ -38,8 +38,8 @@ object AuthServiceImpl extends AuthService with Loggable {
   private lazy val twitter = createTwitter
   private lazy val request = twitter.getOAuthRequestToken
 
-  def login = loginDialog(authByName) match {
-    case None => showPinDialog
+  def login = loginDialogs.requestLogin(authByName) match {
+    case None => loginDialogs.requestPin(processPin)
     case x => x
   }
 
@@ -53,8 +53,6 @@ object AuthServiceImpl extends AuthService with Loggable {
       None
     }
   }
-
-  private def showPinDialog = pinDialog(processPin)
 
   private def processPin(pin: String) = try {
     val accessToken = twitter.getOAuthAccessToken(request, pin)

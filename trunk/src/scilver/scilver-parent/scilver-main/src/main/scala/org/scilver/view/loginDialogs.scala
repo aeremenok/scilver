@@ -1,6 +1,7 @@
 package org.scilver.view
 
 import org.scilver.{Authentication, tr, App}
+import java.awt.Dimension
 
 /**
  * @author eav
@@ -8,43 +9,26 @@ import org.scilver.{Authentication, tr, App}
  * Time: 15:59:13
  */
 object loginDialogs {
-  def forLogin(callback: String => Option[Authentication]) {
-// todo
-  }
+  def requestLogin(callback: String => Option[Authentication]) = showDialog(tr("Please enter your user name"), callback)
 
-  def forPin(callback: String => Option[Authentication]) {
-// todo
+  def requestPin(callback: String => Option[Authentication]) = showDialog(tr("Please enter pin"), callback)
+
+  private def showDialog(title: String, callback: String => Option[Authentication]) = {
+    val dialog = new ScilverLoginDialog(title, callback)
+    dialog.visible = true
+    dialog.getResult
   }
 }
 
-private class LoginDialog(loginCallback: String => Option[Authentication]) extends CallbackFromStringDialog(loginCallback) {
+private class ScilverLoginDialog(val headTitle: String,
+                                 loginCallback: String => Option[Authentication])
+        extends CallbackFromStringDialog(loginCallback) {
   title = App.title
 
-  protected def headTitle = tr("Please enter your user name")
-
-  override protected def onCancel = App.shutdown
-}
-
-object loginDialog {
-  def apply(callback: String => Option[Authentication]) = {
-    val ld = new LoginDialog(callback)
-    ld.visible = true
-    ld.getResult
+  override protected def onCancel = {
+    super.onCancel
+    App.shutdown
   }
-}
 
-private class PinDialog(pinCallback: String => Option[Authentication]) extends CallbackFromStringDialog(pinCallback) {
-  title = App.title
-
-  protected def headTitle = tr("Please enter pin")
-
-  override protected def onCancel = App.shutdown
-}
-
-object pinDialog {
-  def apply(callback: String => Option[Authentication]) = {
-    val ld = new PinDialog(callback)
-    ld.visible = true
-    ld.getResult
-  }
+  minimumSize = new Dimension(250, 100)
 }
