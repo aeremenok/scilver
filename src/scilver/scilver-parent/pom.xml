@@ -44,5 +44,43 @@
     </pluginRepositories>
     <build>
         <directory>${java.io.tmpdir}/${groupId}/${artifactId}/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>webstart-maven-plugin</artifactId>
+                <version>1.0-alpha-1</version>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>webstart-maven-plugin</artifactId>
+                    <!-- do not bind to install phase
+                    <executions>
+                     <execution>
+                       <goals>
+                         <goal>report</goal>
+                       </goals>
+                     </execution>
+                    </executions>
+                    -->
+                    <configuration>
+                        <jnlp>
+                            <mainClass>org.scilver.App</mainClass>
+                        </jnlp>
+                        <sign>
+                            <keystore>${user.home}/scilver.jks</keystore>
+                            <keypass>unsecpwd</keypass>
+                            <storepass>unsecpwd</storepass>
+                            <storetype>jks</storetype>
+                            <alias>scilver</alias>
+                            <verify>true</verify>
+                        </sign>
+                        <verbose>true</verbose>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
