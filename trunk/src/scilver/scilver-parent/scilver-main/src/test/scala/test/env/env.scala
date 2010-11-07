@@ -4,6 +4,10 @@ import org.scilver.log
 import java.io.File
 import org.scilver.db.dbConfig
 import org.mockito.Mockito
+import org.fest.swing.edt.{GuiActionRunner, GuiQuery}
+import org.fest.swing.fixture.FrameFixture
+import javax.swing.{JFrame, JComponent}
+import java.awt.Dimension
 
 /**
  * @author eav
@@ -38,4 +42,28 @@ object dbEnv {
   }
 
   def tearDown(test: Any) = env.tearDown(test)
+}
+
+trait ComponentEnv {
+  def setUp() {
+    env.setUp(this)
+  }
+
+  def edt[T](f: => T): T = GuiActionRunner.execute(new GuiQuery[T] {
+    def executeInEDT = f
+  })
+
+  def frameWith[C <: JComponent](c: => C, width: Int, height: Int): FrameFixture =
+    new FrameFixture(edt {
+      new JFrame() {
+        val comp = c
+        add(comp)
+        comp.setMinimumSize(new Dimension(width, height))
+      }
+    })
+
+
+  def tearDown {
+    env.tearDown(this)
+  }
 }

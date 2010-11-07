@@ -1,68 +1,79 @@
 package org.scilver
 
-import java.awt.Color
 import scala.swing._
-import javax.swing.{SwingConstants, ImageIcon}
-import org.jdesktop.swingx.JXLabel
-import org.jdesktop.swingx.painter._
 import twitter4j.{Paging, Status}
-import java.util.{List => JList}
-import org.scilver.view.RollingTableModel
+import javax.swing._
+import table.{TableCellRenderer, TableCellEditor}
+import java.awt.event.{MouseMotionAdapter, MouseEvent}
+import view.{ExpandableTable, StatusLabel, Clickable, RollingTableModel}
+import java.awt.BorderLayout
 
 /**
  * @author eav
  * Date: 05.10.2010
  * Time: 21:56:10
  */
-object TimelineView extends Table {
-  model = new TimelineModel
-  override def model = super.model.asInstanceOf[TimelineModel]
+object TimelineView extends JTable(new TimelineModel) with ExpandableTable[Status] {
+  setTableHeader(null)
+  setRowHeight(75)
 
-  override protected def rendererComponent(isSelected: Boolean, focused: Boolean, row: Int, column: Int) =
-    new StatusRenderer(apply(row, column).asInstanceOf[Status])
+  setDefaultRenderer(classOf[Status], statusEditor)
+  setDefaultEditor(classOf[Status], statusEditor)
 
-  peer.setTableHeader(null)
+  setSelectionMode(ListSelectionModel.SINGLE_SELECTION)
+  addMouseMotionListener(new MouseMotionAdapter {
+    override def mouseMoved(e: MouseEvent) = {
+      val (row, column) = cellAtPoint(e.getPoint)
+      editCellAt(row, column)
+    }
+  })
 
-  rowHeight = 100
+  def table = this.asInstanceOf[JTable]
+
+  def tableModel = getModel.asInstanceOf[TimelineModel]
+
+  def cellAtPoint(p: Point) = (
+          convertRowIndexToModel(rowAtPoint(p)),
+          convertColumnIndexToModel(columnAtPoint(p))
+          )
 }
 
-class TimelineModel extends RollingTableModel[Status](Array[Object]("Main")) {
+class TimelineModel extends RollingTableModel[Status]("Main") {
   private var currentPage: Int = 0
 
   protected def loadPortion = {
     currentPage += 1
     App.twitter.getFriendsTimeline(new Paging(currentPage))
   }
+
+  override def getColumnClass(columnIndex: Int) = classOf[Status]
+
+  override def isCellEditable(row: Int, column: Int) = true
+
+  override def setValueAt(aValue: AnyRef, row: Int, column: Int) = {}
 }
 
-case class StatusRenderer(status: Status) extends BorderPanel {
-  import BorderPanel.Position._
+object statusEditor extends AbstractCellEditor with TableCellEditor with TableCellRenderer {
+  def getCellEditorValue = null
 
-  add(Component.wrap(new TweetLabel(status)), Center)
-  val userIcon = new IconLabel(status)
+  def getTableCellEditorComponent(table: JTable, value: AnyRef, isSelected: Boolean, row: Int, column: Int) =
+    StatusPanel(value.asInstanceOf[Status])
 
+  def getTableCellRendererComponent(table: JTable, value: AnyRef, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int) =
+    getTableCellEditorComponent(table, value, isSelected, row, column)
+}
+
+case class StatusPanel(status: Status) extends JPanel(new BorderLayout) {
+  add(StatusLabel(status.getText), BorderLayout.CENTER)
+
+  private val userIcon = IconLabel(status)
   if (App.user == status.getUser)
-    add(userIcon, East) else
-    add(userIcon, West)
+    add(userIcon, BorderLayout.EAST) else
+    add(userIcon, BorderLayout.WEST)
 }
 
-class TweetLabel(status: Status) extends JXLabel {
-  setText(status.getText)
-  setHorizontalTextPosition(SwingConstants.CENTER)
-  setHorizontalAlignment(SwingConstants.CENTER)
+case class IconLabel(status: Status) extends JLabel with Clickable {
+  setIcon(new ImageIcon(status.getUser.getProfileImageURL))
 
-  setBackgroundPainter(createPainter)
-  def createPainter = {
-    val rp1 = new RectanglePainter(5, 5, 5, 5, 20, 20);
-    rp1.setFillPaint(Color.LIGHT_GRAY);
-    rp1.setBorderPaint(Color.LIGHT_GRAY.darker);
-    rp1.setStyle(AbstractAreaPainter.Style.BOTH);
-    rp1.setBorderWidth(3);
-    rp1.setAntialiasing(true);
-    new CompoundPainter(rp1, new GlossPainter());
-  }
-}
-
-class IconLabel(status: Status) extends Label {
-  icon = new ImageIcon(status.getUser.getProfileImageURL)
+  def onClick(e: MouseEvent) = Dialog.showMessage(parent = null, message = status.getUser.getScreenName + "'s Profile")
 }

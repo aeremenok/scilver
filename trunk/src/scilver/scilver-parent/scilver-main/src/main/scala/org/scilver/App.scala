@@ -23,7 +23,7 @@ object App extends SwingApplication with Loggable {
       case Some(a) =>
         auth = a
         mainFrame.visible = true
-        TimelineView.model.expand
+        TimelineView.tableModel.expand
 
       case _ => shutdown
     }
@@ -66,5 +66,5 @@ object mainFrame extends Frame {
   pack
   centerOnScreen
 
-  override def closeOperation() = App.shutdown
+  override def closeOperation = App.shutdown
 }

@@ -11,7 +11,11 @@ import org.scilver.{App, tr}
  */
 object toolBar extends BoxPanel(Orientation.Horizontal) {
   def +=(a: Action) =
-    contents += new Button(a) {name = a.title}
+    contents += new Button(a) {
+      name = a.title
+      tooltip = a.title
+      peer.setHideActionText(true)
+    }
 
   this += profileAction
   this += tweetAction
@@ -23,7 +27,13 @@ object toolBar extends BoxPanel(Orientation.Horizontal) {
   contents += Component.wrap(tasks)
 }
 
+object fromFile {
+  def apply(fileName: String) =
+    new ImageIcon(getClass.getClassLoader.getResource(fileName))
+}
+
 object tweetAction extends Action(tr("Tweet")) {
+  icon = fromFile("tweet.png")
   def apply = Dialog.showMessage(toolBar, "Tweet") // todo
 }
 
@@ -33,9 +43,11 @@ object profileAction extends Action(App.user.getScreenName) {
 }
 
 object followersAction extends Action(tr("Followers")) {
+  icon = fromFile("followers.png")
   def apply = Dialog.showMessage(toolBar, "Followers") // todo
 }
 
 object followingAction extends Action(tr("Following")) {
+  icon = fromFile("following.png")
   def apply = Dialog.showMessage(toolBar, "Following") // todo
 }
