@@ -1,17 +1,16 @@
 package org.scilver.view
 
 import javax.swing.table.DefaultTableModel
-import scala.swing.Table
 import javax.swing.event.{ChangeEvent, ChangeListener}
-import javax.swing.JScrollPane
 import java.util.{ArrayList, List => JList}
+import javax.swing.{JTable, JScrollPane}
 
 /**
  * @author eav
  * Date: 05.10.2010
  * Time: 21:56:10
  */
-class ListTableModel[T](titles: Array[Object]) extends DefaultTableModel(titles, 0) {
+class ListTableModel[T](titles: Object*) extends DefaultTableModel(titles.toArray[Object], 0) {
   protected var rows: JList[T] = new ArrayList[T]()
 
   def data = this.rows
@@ -28,7 +27,7 @@ class ListTableModel[T](titles: Array[Object]) extends DefaultTableModel(titles,
   override def getRowCount = if (rows != null) rows.size else 0
 }
 
-abstract class RollingTableModel[T](titles: Array[Object]) extends ListTableModel[T](titles) {
+abstract class RollingTableModel[T](titles: Object*) extends ListTableModel[T](titles) {
   def expand = tasks.execute(loadPortion, append)
 
   protected def loadPortion: JList[T]
@@ -40,9 +39,15 @@ abstract class RollingTableModel[T](titles: Array[Object]) extends ListTableMode
   }
 }
 
-case class ExpandScrollPane(table: Table) extends JScrollPane(table.peer) with ChangeListener {
+trait ExpandableTable[T] {
+  def tableModel: RollingTableModel[T]
+
+  def table: JTable
+}
+
+case class ExpandScrollPane(expandable: ExpandableTable[_]) extends JScrollPane(expandable.table) with ChangeListener {
   val TRESHOLD = 0.8f
-  val tableModel = table.model.asInstanceOf[RollingTableModel[_]]
+  val tableModel = expandable.tableModel
   val scrollBarModel = verticalScrollBar.getModel
 
   scrollBarModel.addChangeListener(this)

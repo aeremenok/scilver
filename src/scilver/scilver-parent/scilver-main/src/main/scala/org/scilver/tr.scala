@@ -9,9 +9,6 @@ object tr {
   def apply(text: String) = text // todo
 }
 
-
-
-
-
-
-
+object html {
+  def apply(text: String) = """<html>""" + text + """</html>"""
+}
